@@ -3,6 +3,8 @@ from pytube import YouTube
 youtube_link = input("Input the youtube url of the video that you \
 would to convert to audio: ")
 
+yt = YouTube(youtube_link)
+
 # confirmation 
 print(f'Is this the correct title of the youtube video? \n "{yt.title}" \n')
 confirm = input("Type Y/y for yes or N/n for no: ")
